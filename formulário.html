@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <fieldset>
+            <p>Todos os campos com (*) são obrigatórios.</p>
+            <legend>Cadastro</legend>
+            <label for="fname">Nome:*</label><br>
+                <input type="text"  id="name" name="Nome" autocomplete="name" placeholder="Nome Completo" autofocus><br><br>
+            <Label for="femail">Email:*</Label><br>
+                <input type="text" id="email" placeholder="Email" autocomplete="email"><br><br>
+            <label for="idade">Idade:*</label><br>
+                <input type="number" name="idade" id="idade" min="12"><br><br>
+            <label for="nasc">Data de Nascimento:*</label><br>
+                <input type="date" id="nasc" name="nasc"><br><br>
+            <label>Onde você possui conta:* <br>
+                <input type="checkbox" name="instagram" id="cinsta"> Instagram
+                <input type="checkbox" name="facebook" id="cface"> Facebook
+                <input type="checkbox" name="youtube" id="cyou"> Youtube
+            </label><br><br>
+            <label for="genero">Sexo:*</label><br>
+            <input type="radio" name="genero" id="mas" checked> Masculino
+            <input type="radio" name="genero" id="fem"> Feminino
+            <br><br>
+            <label for="corol">Cor dos olhos:*</label><br>
+                <input type="color" name="corolhos" id="corol"><br><br>
+            <label for="bib">Bibliografia:*</label><br>
+                <textarea name="bibliografia" id="bib" cols="30" rows=""></textarea><br><br>
+            <label for="foto">Foto do Perfil:*</label><br>
+                <input type="file" name="foto" id="foto" accept="imagem/*"><br><br>
+            <label for="tel">Telefone:*</label><br>
+                <input type="tel" name="tel" id="tel"><br><br>
+            <label for="lface">Link do Perfil do Facebook:*</label><br>
+                <input type="url" name="lface" id="lface"><br><br>
+            <label for="pass">Senha:*</label><br>
+                <input type="password" name="pass" id="pass" minlength="6" maxlength="8"><br><br>
+            <button type="reset" name="limpar" id="limpar">Limpar</button>
+            <button type="submit" name="enviar" id="enviar">Enviar Dados</button>
+        </fieldset>
+    </form>
+</body>
+</html>
